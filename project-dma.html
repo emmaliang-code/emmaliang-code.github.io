@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Emma Liang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #e8e6e1;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8e6e1;
+            z-index: 1000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .back-link {
+            padding: 100px 50px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .back-link a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.3s;
+        }
+
+        .back-link a:hover {
+            opacity: 0.6;
+        }
+
+        .project-hero {
+            padding: 40px 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-hero h1 {
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .project-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 500px;
+            background-color: #d4d2cc;
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 0 50px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .project-details h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .project-details p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .project-description h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .project-description p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .project-description ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-description li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .project-images img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .full-width-image {
+            grid-column: 1 / -1;
+            height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .back-link {
+                padding: 100px 20px 20px;
+            }
+
+            .project-hero {
+                padding: 40px 20px;
+            }
+
+            .project-hero h1 {
+                font-size: 32px;
+            }
+
+            .project-image {
+                height: 300px;
+            }
+
+            .project-content {
+                padding: 0 20px 60px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+
+            .project-images img {
+                height: 250px;
+            }
+
+            .full-width-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Emma Liang</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="back-link">
+        <a href="portfolio.html">← Back to Portfolio</a>
+    </div>
+
+    <div class="project-hero">
+        <h1>DMA Study Coburg, AUS</h1>
+        <p class="project-meta">Urban Planning · Development Study · July 2, 2019</p>
+        
+        <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Project Image">
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="content-grid">
+            <div class="project-details">
+                <h3>Project Details</h3>
+                <p><strong>Location:</strong> Coburg, Australia</p>
+                <p><strong>Type:</strong> Development Management Assessment</p>
+                <p><strong>Duration:</strong> 6 months</p>
+                <p><strong>Role:</strong> Urban Planner</p>
+                <p><strong>Team Size:</strong> 4 members</p>
+            </div>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This Development Management Assessment (DMA) study examines the urban growth potential and planning considerations for the Coburg district in Melbourne, Australia. The project analyzes existing infrastructure, community needs, and sustainable development opportunities to inform future planning decisions.</p>
+                
+                <h2>Key Objectives</h2>
+                <ul>
+                    <li>Assess current land use patterns and zoning regulations</li>
+                    <li>Identify opportunities for increased density while maintaining neighborhood character</li>
+                    <li>Evaluate transportation infrastructure and connectivity needs</li>
+                    <li>Develop recommendations for sustainable urban development</li>
+                    <li>Engage with community stakeholders to understand local priorities</li>
+                </ul>
+
+                <h2>Outcomes</h2>
+                <p>The study provided comprehensive recommendations for balanced urban growth that respects the area's heritage while accommodating future population increases. Key findings included strategies for transit-oriented development, green space preservation, and mixed-use zoning to create a more vibrant, walkable community.</p>
+            </div>
+        </div>
+
+        <div class="project-images">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Project detail 1">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Project detail 2">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Project detail 3" class="full-width-image">
+        </div>
+    </div>
+</body>
+</html>
