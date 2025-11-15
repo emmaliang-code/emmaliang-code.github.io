@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Emma Liang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #e8e6e1;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8e6e1;
+            z-index: 1000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .about-section {
+            padding: 120px 50px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h1 {
+            font-size: 48px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .contact-section {
+            background-color: #d4d2cc;
+            padding: 80px 50px;
+            margin-top: 60px;
+        }
+
+        .contact-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 80px;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-text h2 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact-form {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #999;
+            background-color: transparent;
+            font-size: 14px;
+            font-family: inherit;
+            border-radius: 25px;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .submit-btn {
+            background-color: #333;
+            color: white;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .about-section {
+                flex-direction: column;
+                padding: 100px 20px 60px;
+            }
+
+            .about-content h1 {
+                font-size: 32px;
+            }
+
+            .contact-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .contact-section {
+                padding: 60px 20px;
+            }
+
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Emma Liang</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-section">
+        <div class="about-content">
+            <h1>About</h1>
+            <p>I am a recent graduate from Dalhousie University, where I earned a Bachelor of Community Design + Planning with a double major in Urban Planning & Design and Sustainability. Originally from Vancouver, BC, I've been inspired by the region's ability to balance urban vitality with natural landscapes. My work is guided by a commitment to integrating social equity and environmental responsibility into comprehensive planning frameworks that shape more resilient and inclusive communities.</p>
+            <p>Professionally, I've gained experience across both the public and non-profit sectors, contributing to multidisciplinary project management teams and supporting large-scale development projects through various master planning phases. I'm passionate about bridging design thinking, policy, and community engagement in ways that foster connection and well-being.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800" alt="Interior Design">
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Contact us</h2>
+                <p>Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you!</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>Name (required)</label>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email (required)</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="signup">
+                        <label for="signup">Sign up for news and updates</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Message (required)</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
