@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis - Emma Liang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #e8e6e1;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8e6e1;
+            z-index: 1000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .thesis-hero {
+            padding: 100px 50px 0;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            min-height: 70vh;
+        }
+
+        .thesis-text {
+            flex: 1;
+        }
+
+        .thesis-text h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .thesis-text .subtitle {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .thesis-text .university {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .thesis-image {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .thesis-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .thesis-content {
+            padding: 80px 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            display: flex;
+            gap: 80px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-text p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .content-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .research-section {
+            background-color: #d4d2cc;
+            padding: 60px 50px;
+            margin-top: 60px;
+        }
+
+        .research-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .research-content h2 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .research-question {
+            margin-bottom: 30px;
+        }
+
+        .research-question h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .research-question p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .research-question ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .research-question li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .thesis-hero {
+                flex-direction: column;
+                padding: 100px 20px 40px;
+            }
+
+            .thesis-text h1 {
+                font-size: 28px;
+            }
+
+            .thesis-content {
+                padding: 60px 20px;
+            }
+
+            .content-section {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .research-section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Emma Liang</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="thesis-hero">
+        <div class="thesis-text">
+            <h1>Navigating Managed Retreat in Halifax, NS</h1>
+            <p class="subtitle">Undergraduate Honours Thesis</p>
+            <p class="university">Dalhousie University, NS</p>
+        </div>
+        <div class="thesis-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Thesis Image">
+        </div>
+    </div>
+
+    <div class="thesis-content">
+        <div class="content-section">
+            <div class="content-text">
+                <p>This research examines the concept of managed retreat and stakeholder responsibility in facilitating a coordinated risk reduction strategy against regional sea-level rise. The study investigates three Nova Scotian coastal municipalities that exhibit characteristics requiring managed retreat and the factors facilitating or constraining these strategies. It analyzes the decision-making processes, institutional barriers, and opportunities that influence how communities can develop effective climate adaptation planning.</p>
+            </div>
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Research Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="research-section">
+        <div class="research-content">
+            <h2>Research Questions</h2>
+            
+            <div class="research-question">
+                <h3>Primary Research Question</h3>
+                <p>Who is responsible for informing property buyers about climate risks along Halifax's coastline?</p>
+            </div>
+
+            <div class="research-question">
+                <h3>Supporting Research Questions</h3>
+                <ul>
+                    <li>How does the perception of property values along Halifax's coastline influence stakeholder attitudes towards managed retreat?</li>
+                    <li>What are the key legal and institutional barriers to implementing managed retreat strategies in Halifax?</li>
+                    <li>How can communication and collaboration between municipal, provincial, and federal levels of government be improved to facilitate effective climate adaptation planning?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
