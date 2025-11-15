@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Emma Liang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #e8e6e1;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8e6e1;
+            z-index: 1000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .resume-section {
+            padding: 120px 50px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .resume-title {
+            flex: 1;
+        }
+
+        .resume-title h1 {
+            font-size: 72px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .download-link {
+            padding: 12px 30px;
+            background-color: transparent;
+            border: 1px solid #333;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .resume-content {
+            display: flex;
+            gap: 60px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-main {
+            flex: 1;
+        }
+
+        .resume-section-title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        .resume-section-title:first-child {
+            margin-top: 0;
+        }
+
+        .resume-item {
+            margin-bottom: 25px;
+        }
+
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .resume-item-title {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .resume-item-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .resume-item-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .resume-item ul {
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .resume-item li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .resume-section {
+                padding: 100px 20px 60px;
+            }
+
+            .resume-header {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .resume-title h1 {
+                font-size: 48px;
+            }
+
+            .resume-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Emma Liang</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="resume-section">
+        <div class="resume-header">
+            <div class="resume-title">
+                <h1>Resume</h1>
+            </div>
+            <a href="#" class="download-link">Download PDF</a>
+        </div>
+
+        <div class="resume-content">
+            <div class="contact-info">
+                <p>+1 (604) 697-1798</p>
+                <p><a href="mailto:emma.erin.l@gmail.com">emma.erin.l@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/emma-erin-liang">www.linkedin.com/in/emma-erin-liang</a></p>
+                <p><a href="https://emmaliang.com">emmaliang.com</a></p>
+            </div>
+
+            <div class="resume-main">
+                <div class="resume-section-title">Education</div>
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <div class="resume-item-title">Bachelor of Community Design + Planning, Dalhousie University, Halifax, NS</div>
+                        <div class="resume-item-date">September 2021 - June 2025</div>
+                    </div>
+                    <ul>
+                        <li>Double Major: Urban Planning & Design and Sustainability</li>
+                        <li>Honours Scholar + Dean List</li>
+                        <li>Relevant course work: Plan and City (A+), Urban Communities (A+), Space, Place and Culture (A+), Land Development Economics (A+), Housing and Neighborhoods (A+), Planning for Real Estate Markets</li>
+                        <li>International Exchange Student</li>
+                    </ul>
+                </div>
+
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <div class="resume-item-title">Bachelor of Design, University of Melbourne, Melbourne, AUS</div>
+                        <div class="resume-item-date">February 2024 - June 2024</div>
+                    </div>
+                    <ul>
+                        <li>International Exchange Student</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section-title">Work Experience</div>
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <div class="resume-item-title">Planning & Policy, Halifax & Region, Halifax, NS</div>
+                        <div class="resume-item-date">October 2024 - April 2025</div>
+                    </div>
+                    <ul>
+                        <li>Currently supporting a diverse team of 120 points per shift, maintaining a friendly front of house atmosphere during peak hours</li>
+                        <li>Assisted in the development of comprehensive climate action strategies</li>
+                        <li>Processed payments and handled customer inquiries accurately to ensure a seamless check-out experience</li>
+                        <li>Organized daily operations during busy periods by working with adjacent tables, clearing tables, and conducting regular table checks to maintain efficiency</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section-title">Additional Experience</div>
+                <div class="resume-item">
+                    <div class="resume-item-header">
+                        <div class="resume-item-title">Vice President, Society of Undergraduate Planners (SUP), Dalhousie University, Halifax, NS</div>
+                        <div class="resume-item-date">September 2023 - June 2025</div>
+                    </div>
+                    <ul>
+                        <li>General supervision of the council and society</li>
+                        <li>Coordinate guest presenter and develop guest policy</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section-title">Certifications</div>
+                <div class="resume-item">
+                    <p><strong>Planning Institute of British Columbia (PIBC)</strong> - May 2022 - Present</p>
+                    <p><strong>Canadian Institute of Planners (CIP)</strong> - May 2022 - Present</p>
+                    <p><strong>Ethical Conduct for Research Involving Humans (TCPS 2: CORE 2022)</strong> - October 2023</p>
+                </div>
+
+                <div class="resume-section-title">Additional Information</div>
+                <div class="resume-item">
+                    <ul>
+                        <li><strong>Skills:</strong> Cantonese service, Data analysis, Graphic mediums, Press management, Technical Skills: Microsoft Word, SketchUp, GIS</li>
+                        <li><strong>Languages:</strong> Cantonese and Spanish - Intermediate understanding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
