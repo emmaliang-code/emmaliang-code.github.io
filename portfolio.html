@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Emma Liang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #e8e6e1;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #e8e6e1;
+            z-index: 1000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .portfolio-section {
+            padding: 120px 50px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .portfolio-item {
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 350px;
+            background-color: #d4d2cc;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-title {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .portfolio-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                font-size: 13px;
+            }
+
+            .portfolio-section {
+                padding: 100px 20px 60px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .portfolio-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Emma Liang</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="portfolio-section">
+        <div class="portfolio-grid">
+            <a href="project-dma.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="DMA study Coburg">
+                </div>
+                <h3 class="portfolio-title">DMA study Coburg, AUS</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+
+            <a href="project-multi-parcel.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Multi-Parcel Redevelopment">
+                </div>
+                <h3 class="portfolio-title">Multi-Parcel Redevelopment Site Plan</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+
+            <a href="project-residential.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Residential Building">
+                </div>
+                <h3 class="portfolio-title">Residential Building Floor Plan</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+
+            <a href="project-tiffany.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Tiffany Commons">
+                </div>
+                <h3 class="portfolio-title">Tiffany Commons Concept Plan</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+
+            <a href="project-policy.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Policy Brief">
+                </div>
+                <h3 class="portfolio-title">Policy Brief</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+
+            <a href="thesis.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Thesis">
+                </div>
+                <h3 class="portfolio-title">Thesis</h3>
+                <p class="portfolio-date">Jul 2, 2019</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
